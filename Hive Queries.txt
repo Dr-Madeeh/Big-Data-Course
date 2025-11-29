@@ -1,0 +1,9 @@
+select movie_id, count(rating) as popular
+from ratings
+group by movie_id
+order by popular
+desc;
+
+
+select movie_title from movies
+where movie_id=50;

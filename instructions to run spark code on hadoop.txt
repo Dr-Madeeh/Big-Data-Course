@@ -1,0 +1,10 @@
+1. using Ambari, upload .py file to MovieLens folder
+
+2. using putty, run this command to copy the file from Hadoop to Linux where we should run the script:
+
+hdfs dfs -copyToLocal /user/maria_dev/MovieLens/movielens_top_movie.py .
+
+
+3. run the script:
+
+spark-submit movielens_top_movie.py
